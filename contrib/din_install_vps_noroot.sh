@@ -3,7 +3,9 @@
 clear
 
 #read user
-echo -e "Enter the username of the D.I.N. user (default: sinovate)"
+echo -e "Please enter username for the new D.I.N. user (default: sinovate)"
+echo -e "root login will be disabled for security reasons"
+
 read NODEUSER
 if [ -z "$NODEUSER" ]; then
   NODEUSER="sinovate"
